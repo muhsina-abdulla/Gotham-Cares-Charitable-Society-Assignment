@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GothamAPI", "GothamAPI\GothamAPI.csproj", "{CBC1016F-7EF7-4B33-A82E-FF88340A37D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuisnessServices", "BuisnessServices\BuisnessServices.csproj", "{BE6BFD5C-B4CF-4DA3-AE0C-7FBC08AD3247}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBC1016F-7EF7-4B33-A82E-FF88340A37D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC1016F-7EF7-4B33-A82E-FF88340A37D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC1016F-7EF7-4B33-A82E-FF88340A37D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC1016F-7EF7-4B33-A82E-FF88340A37D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6BFD5C-B4CF-4DA3-AE0C-7FBC08AD3247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6BFD5C-B4CF-4DA3-AE0C-7FBC08AD3247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6BFD5C-B4CF-4DA3-AE0C-7FBC08AD3247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6BFD5C-B4CF-4DA3-AE0C-7FBC08AD3247}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7204BF93-32AF-4320-AF4F-3C266ED341A4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+CREATE TABLE Volunteers(
+	v_Id INT NOT NULL PRIMARY KEY,
+	v_name VARCHAR(50) NOT NULL,
+	phone INT NOT NULL,
+	email VARCHAR(200) NOT NULL,
+	outlet_id INT NOT NULL,
+	date DATE NOT NULL
+	FOREIGN KEY(outlet_Id) REFERENCES Outlet(O_Id)
+);
+
+
+CREATE TABLE Outlet(
+	O_Id INT NOT NULL PRIMARY KEY,
+	O_name VARCHAR(50) UNIQUE NOT NULL,
+	street VARCHAR(50) NOT NULL,
+	landmark VARCHAR(200) NOT NULL,
+	foodpacks INT NOT NULL,
+	foodtype VARCHAR(15) NOT NULL,
+	req_vlntr INT NOT NULL
+	
+);
+
+
+CREATE TABLE OutletsPerDates(
+	date_ DATE NOT NULL,
+	Outlet_id int NOT NULL,
+	FOREIGN KEY(Outlet_Id) REFERENCES Outlet(O_Id)
+);
+
+
+CREATE TABLE Admins(
+	email VARCHAR(200) NOT NULL PRIMARY KEY,
+	password VARCHAR(50) NOT NULL
+);
