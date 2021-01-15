@@ -15,11 +15,7 @@ namespace GothamAPI.Controllers
     {
         public List<Volunteers> Volunteers { get; set; } = new List<Volunteers>();
 
-        public AdminsController()
-        {
-            Volunteers.Add(new Volunteers() { Id = 1, Name = "Muhsina Binth", Phone = 869624448, email = "muhsinabinth@gmail.com", OutletId = 2 });
-            Volunteers.Add(new Volunteers() { Id = 2, Name = "Muhsina", Phone = 860624448, email = "muhsina@gmail.com", OutletId = 1 });
-        }
+       
 
         [HttpGet]
         [Route("VolunteersList")]
@@ -31,20 +27,20 @@ namespace GothamAPI.Controllers
         }
 
         // POST api/<AdminsController>
-        [HttpPost]
+        [HttpPost("New Outlet")]
         public void Post([FromBody] string value)
         {
         }
 
         // PUT api/<AdminsController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("Edit Outlet/{id}")]
+        public void Put(Guid id, [FromBody] string value)
         {
         }
 
 
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        [HttpDelete("Delete Outlet/{id}")]
+        public void Delete(Guid id)
         {
         }
     }

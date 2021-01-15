@@ -20,9 +20,9 @@ namespace GothamAPI.Controllers
 
         public VolunteersController()
         {
-            Outlet item = new Outlet() { Id = 1, Name = "Outlet1", Street = "ABC Street", Landmark = "ABC", FoodPackets = 50, FoodType = "Both", RequiredVolunteers = 19 };
+            Outlet item = new Outlet() { Id = new Guid(), Name = "Outlet1", Street = "ABC Street", Landmark = "ABC", FoodPackets = 50, FoodType = "Both", RequiredVolunteers = 19 };
             Outlets.Add(item);
-            item = new Outlet() { Id = 2, Name = "Outlet2", Street = "ABC Street2", Landmark = "ABC2", FoodPackets = 76, FoodType = "Veg", RequiredVolunteers = 24 };
+            item = new Outlet() { Id = new Guid(), Name = "Outlet2", Street = "ABC Street2", Landmark = "ABC2", FoodPackets = 76, FoodType = "Veg", RequiredVolunteers = 24 };
             Outlets.Add(item);
         }
 

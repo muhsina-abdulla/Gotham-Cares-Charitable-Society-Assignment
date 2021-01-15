@@ -6,12 +6,12 @@ namespace BuisnessServices.Entities
 {
     public class Volunteers
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public String Name { get; set; }
         public int Phone { get; set; }
         public string email { get; set; }
-        public int OutletId { get; set; }
-       // public DateTime Date { get; set; }
+        public Outlet Outlet { get; set; } = new Outlet();
+        public String Date { get ; set; }
 
 
 
