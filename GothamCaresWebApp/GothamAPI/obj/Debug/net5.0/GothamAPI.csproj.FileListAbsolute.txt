@@ -46,3 +46,7 @@ E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\G
 E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\Npgsql.dll
 E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\obj\Debug\net5.0\GothamAPI.MvcApplicationPartsAssemblyInfo.cs
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\System.Web.Http.dll
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

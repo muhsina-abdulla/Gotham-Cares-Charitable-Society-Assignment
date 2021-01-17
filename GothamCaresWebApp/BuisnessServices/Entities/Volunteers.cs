@@ -12,7 +12,6 @@ namespace BuisnessServices.Entities
         public string email { get; set; }
 
         public int OutletId { get; set; }
-        public Outlet Outlet { get; set; }
         public String Date { get ; set; }
 
 
