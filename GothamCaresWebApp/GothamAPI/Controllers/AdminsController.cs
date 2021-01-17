@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http.Description;
+using BuisnessServices.Services;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,41 +16,48 @@ namespace GothamAPI.Controllers
     [ApiController]
     public class AdminsController : ControllerBase
     {
-        
+        private IAdmin Admin;
         public List<Volunteers> Volunteers { get; set; } = new List<Volunteers>();
 
-       
+        public AdminsController(IAdmin admin)
+        {
+            Admin = admin;
+        }
 
         [HttpGet]
         [Route("VolunteersList")]
-        public List<Volunteers> Get()
+        public IActionResult GetVolunteers()
         {
 
-            return Volunteers;
+            return Ok(Admin.GetVolunteers());
 
         }
 
         // POST api/<AdminsController>
         [HttpPost("New Outlet")]
-        public void Post([FromBody] string value)
+        public IActionResult AddOutlet(Outlet Outlet)
         {
+            
+            return Ok(Admin.AddOutlet(Outlet));
+
         }
 
         // PUT api/<AdminsController>/5
         [HttpPut("Edit Outlet/{id}")]
-        public void Put(Guid id, [FromBody] string value)
+        public IActionResult EditOutlet(Outlet Outlet) 
         {
+            return Ok(Admin.EditOutletDetails(Outlet));
         }
 
         
+       
         [HttpDelete("Delete Outlet/{id}")]
-        [ResponseType(typeof(Outlet))]
-        public IHttpActionResult DeleteOutlet(int id) 
+        public IActionResult DeleteOutlet(int id) 
         {
-            Outlet outlet = db.Outlets.Find(id);
-            return Ok(outlet);
+           
+            return Ok(Admin.DeleteOutlet(id));
         }
 
-
+       
     }
 }

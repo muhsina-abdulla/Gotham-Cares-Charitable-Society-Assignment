@@ -48,7 +48,7 @@ namespace BuisnessServices.Services
             db.Outlets.Add(Outlet);
             db.SaveChanges();
 
-            return "Outlet Dtetails Edited Successfully";
+            return "Outlet Details Edited Successfully";
         }
 
         public List<Volunteers> GetVolunteers()
