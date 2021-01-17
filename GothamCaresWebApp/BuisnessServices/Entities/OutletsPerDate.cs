@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿//using Microsoft.EntityFrameworkCore;
+//using System;
+//using System.Collections.Generic;
 
+//namespace BuisnessServices.Entities
+//{
+//    public class OutletsPerDate
+//    {
+        
+//        public String Date { get; set; }
 
-namespace BuisnessServices.Entities
-{
-    public class OutletsPerDate
-    {
-        [Key]
-        public String Date { get; set; }
-        public List<Outlet> Outlets { get; set; } = new List<Outlet>();
-    }
-}
+        
+//        public int OutletId { get; set; }
+//        public List<Outlet> Outlets { get; set; }
+
+//    }
+//}
