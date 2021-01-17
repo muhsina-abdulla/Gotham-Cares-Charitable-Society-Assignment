@@ -8,7 +8,10 @@ namespace BuisnessServices.Data
 {
     public class GothamContext : DbContext
     {
-        public GothamContext(DbContextOptions options) : base(options) {}
+        public GothamContext(DbContextOptions options) : base(options) 
+        {
+        
+        }
         public DbSet<Volunteers> Volunteers { get; set; }
         
         public DbSet<Outlet> Outlets { get; set; }

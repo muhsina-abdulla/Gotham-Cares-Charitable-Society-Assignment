@@ -1,9 +1,11 @@
-﻿using BuisnessServices.Entities;
+﻿using BuisnessServices.Data;
+using BuisnessServices.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http.Description;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,6 +15,7 @@ namespace GothamAPI.Controllers
     [ApiController]
     public class AdminsController : ControllerBase
     {
+        
         public List<Volunteers> Volunteers { get; set; } = new List<Volunteers>();
 
        
@@ -38,10 +41,15 @@ namespace GothamAPI.Controllers
         {
         }
 
-
+        
         [HttpDelete("Delete Outlet/{id}")]
-        public void Delete(Guid id)
+        [ResponseType(typeof(Outlet))]
+        public IHttpActionResult DeleteOutlet(int id) 
         {
+            Outlet outlet = db.Outlets.Find(id);
+            return Ok(outlet);
         }
+
+
     }
 }

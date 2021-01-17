@@ -13,6 +13,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BuisnessServices.Services;
+
 
 namespace GothamAPI
 {
@@ -40,6 +42,9 @@ namespace GothamAPI
                 options.UseNpgsql(Configuration.GetConnectionString("PostgresConnection"));
 
             });
+
+            services.AddScoped<IAdmin,AdminRepository>();
+            services.AddScoped<IVolunteer, VolunteerRepository>();
 
           
         }
