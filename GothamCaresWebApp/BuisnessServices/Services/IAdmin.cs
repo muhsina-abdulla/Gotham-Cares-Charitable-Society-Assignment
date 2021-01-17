@@ -10,7 +10,7 @@ namespace BuisnessServices.Services
     {
         List<Volunteers> GetVolunteers();
         String AddOutlet(Outlet Outlet);
-        void EditOutletDetails(int id);
+        String EditOutletDetails(Outlet Outlet);
 
         String DeleteOutlet(int id);
 

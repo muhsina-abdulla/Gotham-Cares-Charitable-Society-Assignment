@@ -36,9 +36,19 @@ namespace BuisnessServices.Services
             return "Deletion Successful";
         }
 
-        public void EditOutletDetails(int id)
+        public String EditOutletDetails(Outlet Outlet)
         {
-            throw new NotImplementedException();
+            var id = Outlet.OutletId;
+            Outlet toChange = db.Outlets.Find(id);
+            if (toChange == null) 
+            {
+                return $"Outlet with OutletId = {toChange.OutletId} does not exist";
+            }
+            db.Outlets.Remove(toChange);
+            db.Outlets.Add(Outlet);
+            db.SaveChanges();
+
+            return "Outlet Dtetails Edited Successfully";
         }
 
         public List<Volunteers> GetVolunteers()
