@@ -46,7 +46,12 @@ namespace GothamAPI.Controllers
         [HttpPut("Edit Outlet/{id}")]
         public IActionResult EditOutlet(Outlet Outlet) 
         {
-            return Ok(Admin.EditOutletDetails(Outlet));
+            String result = Admin.EditOutletDetails(Outlet);
+            if (result.Equals("Outlet Details Edited Successfully"))
+                {
+                    return Ok(result);
+                }
+            return NotFound(result);
         }
 
         
@@ -54,8 +59,12 @@ namespace GothamAPI.Controllers
         [HttpDelete("Delete Outlet/{id}")]
         public IActionResult DeleteOutlet(int id) 
         {
-           
-            return Ok(Admin.DeleteOutlet(id));
+            string result = Admin.DeleteOutlet(id);
+            if (result.Equals("Deletion Successful"))
+            {
+                return Ok(result);
+            }
+            return NotFound(result);
         }
 
        
