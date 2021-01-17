@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BuisnessServices.Services;
 
 
 
@@ -14,28 +15,27 @@ namespace GothamAPI.Controllers
     [Route("api/[controller]")]  
     public class VolunteersController : ControllerBase
     {
+        private IVolunteer Volunteer;
 
-
-        public List<Outlet> Outlets { get; set; } = new List<Outlet>();
-
-        public VolunteersController()
+        public VolunteersController(IVolunteer volunteer)
         {
-           
+            Volunteer = volunteer;
         }
+
 
         [HttpPost]
         [Route("Registration")]
-        public void Post()
+        public IActionResult Register(Volunteers Vol) 
         {
-
+            return Ok(Volunteer.VolunteerRegister(Vol));
 
         }
 
         [HttpGet]
         [Route("Outlets")]
-        public List<Outlet> Get()
+        public IActionResult GetOutlets()
         {
-            return Outlets;
+            return Ok(Volunteer.GetOutlets());
         }
     }
 }
