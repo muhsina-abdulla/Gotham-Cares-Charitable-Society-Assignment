@@ -44,9 +44,9 @@ namespace GothamAPI
 
             });
 
-            services.AddScoped<IAdmins,Admins>();
-            services.AddScoped<IVolunteer,Volunteer>();
-            services.AddScoped<IOultlets,Outlets>();
+            services.AddScoped<IAdmins, Admins>();
+            services.AddScoped<IVolunteer, Volunteer>();
+            services.AddScoped<IOutlets, Outlets>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
