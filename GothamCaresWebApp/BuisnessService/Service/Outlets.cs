@@ -8,7 +8,7 @@ using System.Text;
 
 namespace BuisnessService.Service
 {
-    class Outlets : IOutlets
+    public class Outlets : IOutlets
     {
         private GothamContext db;
 
