@@ -21,20 +21,6 @@ namespace BuisnessService.Service
        
         public Admin login(string email, string password)
         {
-            //Admin admin = db.Admins.Find(email);
-            //if (admin == null)
-            //{
-            //    return "Incorrect email Address";
-            //}
-            //else if (!(admin.Password).Equals(password))
-            //{
-            //    return "Incorrect Password";
-            //}
-            //else 
-            //{
-            //    return "Login Success";
-            //}
-
             return db.Admins.Find(email);
         }
     }

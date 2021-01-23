@@ -2,7 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-
+using BuisnessService.Service;
+using BuisnessService.ServiceInterface;
+using DataService.Entities;
 
 
 
@@ -14,26 +16,48 @@ namespace GothamAPI.Controllers
     [ApiController]
     public class AdminsController : ControllerBase
     {
-        private IAdmin Admin;
+        private IAdmins Admin;
 
-        public AdminsController(IAdmin admin)
+        public AdminsController(IAdmins admin)
         {
             Admin = admin;
         }
 
+        [HttpGet("Login/{email}/{password}")]
+        public IActionResult Login(string email, String password) 
+        {
+            Admin admin = Admin.login(email, password);
+            if (admin == null)
+            {
+                return NotFound("Incorrect Email Address");
+            }
+            else if (!(admin.Password).Equals(password))
+            {
+                return NotFound("Incorrect Password");
+            }
+            else
+            {
+                return Ok("Login Success");
+            }
 
-       
 
-        
-       
+        }
 
-        // PUT api/<AdminsController>/5
-        
 
-        
-       
-        
 
-       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

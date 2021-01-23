@@ -18,7 +18,7 @@ namespace GothamAPI.Controllers
         [Route("Outlets")]
         public IActionResult GetOutlets()
         {
-            return Ok(Volunteer.GetOutlets());
+            return Ok(Outlets.GetOutlets());
         }
 
 
