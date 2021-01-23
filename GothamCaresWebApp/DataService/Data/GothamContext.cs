@@ -21,67 +21,66 @@ namespace DataService.Data
        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            Outlet one = new Outlet()
-            {
-                
-                Name = "Rose",
-                Street = "ABC",
-                Landmark = "ABC Store",
-                FoodPackets = 78,
-                FoodType = FoodType.NonVeg,
-                RequiredVolunteers = 7,
-                Date = '2021/01/21'
-            };
-            Outlet two = new Outlet()
-            {
-                
-                Name = "Lily",
-                Street = "DEF",
-                Landmark = "DEF Store",
-                FoodPackets = 100,
-                FoodType = FoodType.Veg,
-                RequiredVolunteers = 10,
-                Date = '2021/01/22'
-            };
+
+            modelBuilder.Entity<Outlet>().HasData(
+              new Outlet
+              {
+                  Name = "Rose",
+                  Street = "ABC",
+                  Landmark = "ABC Store",
+                  FoodPackets = 78,
+                  FoodType = FoodType.NonVeg,
+                  RequiredVolunteers = 7,
+                  Date = "21/01/2020"
+              }
+              ,new Outlet
+              {
+                  Name = "Lily",
+                  Street = "DEF",
+                  Landmark = "DEF Store",
+                  FoodPackets = 100,
+                  FoodType = FoodType.Veg,
+                  RequiredVolunteers = 10,
+                  Date = "22/01/2020"
+
+              }
+
+             , new Outlet
+             {
+
+                 Name = "Jasmine",
+                 Street = "GHI",
+                 Landmark = "GHI Store",
+                 FoodPackets = 110,
+                 FoodType = FoodType.Both,
+                 RequiredVolunteers = 11,
+                 Date = "23/01/2020"
+             }, new Outlet
+             {
 
 
-            modelBuilder.Entity<Outlet>().HasData(one,two
-            , new Outlet
-            {
-                
-                Name = "Jasmine",
-                Street = "GHI",
-                Landmark = "GHI Store",
-                FoodPackets = 110,
-                FoodType = FoodType.Both,
-                RequiredVolunteers = 11,
-                Date = '2021/01/23'
-            }, new Outlet
-            {
+                 Name = "Lavender",
+                 Street = "JKL",
+                 Landmark = "JKL Store",
+                 FoodPackets = 200,
+                 FoodType = FoodType.Both,
+                 RequiredVolunteers = 20,
+                 Date = "24/01/2020"
 
-                
-                Name = "Lavender",
-                Street = "JKL",
-                Landmark = "JKL Store",
-                FoodPackets = 200,
-                FoodType = FoodType.Both,
-                RequiredVolunteers = 20,
-                Date = '2021/01/24'
+             }, new Outlet
+             {
 
-            }, new Outlet
-            {
 
-                
-                Name = "Orchid",
-                Street = "MNO",
-                Landmark = "MNO Store",
-                FoodPackets = 400,
-                FoodType = FoodType.Veg,
-                RequiredVolunteers = 40,
-                Date = '2021/01/25'
+                 Name = "Orchid",
+                 Street = "MNO",
+                 Landmark = "MNO Store",
+                 FoodPackets = 400,
+                 FoodType = FoodType.Veg,
+                 RequiredVolunteers = 40,
+                 Date = "25/01/2020"
 
-            }
-            );
+             }
+            ) ; 
 
 
             modelBuilder.Entity<Volunteers>().HasData(new Volunteers

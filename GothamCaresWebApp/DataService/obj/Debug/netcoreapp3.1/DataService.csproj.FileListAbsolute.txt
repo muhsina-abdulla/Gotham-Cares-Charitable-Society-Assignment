@@ -7,3 +7,6 @@ E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\D
 E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\DataService\obj\Debug\netcoreapp3.1\DataService.csproj.CoreCompileInputs.cache
 E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\DataService\obj\Debug\netcoreapp3.1\DataService.dll
 E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\DataService\obj\Debug\netcoreapp3.1\DataService.pdb
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\DataService\bin\Debug\netcoreapp3.1\DataService.runtimeconfig.json
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\DataService\bin\Debug\netcoreapp3.1\DataService.runtimeconfig.dev.json
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\DataService\obj\Debug\netcoreapp3.1\DataService.genruntimeconfig.cache

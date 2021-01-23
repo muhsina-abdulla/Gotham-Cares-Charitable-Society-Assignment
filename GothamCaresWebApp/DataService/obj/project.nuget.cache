@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "kkwwGAfaL7T4aHsErFv0ubnCzL7fAjuA0PgzurGbX+22Q+t1KYjb1gTqbURT9BDm0xA5e1YJ5fMt8mR5iikXyw==",
+  "dgSpecHash": "8QGEpl2iQ/49JCWjMPsA//JP9irTsDLKRz2rPsyomc49+vtzg1VIYiIRBx/IteSoOMTV4OEQe7ckQypjBLE5Ig==",
   "success": true,
   "projectFilePath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\DataService\\DataService.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\muhsi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.2\\microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
     "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.2\\microsoft.entityframeworkcore.abstractions.5.0.2.nupkg.sha512",
     "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.2\\microsoft.entityframeworkcore.analyzers.5.0.2.nupkg.sha512",
+    "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.2\\microsoft.entityframeworkcore.design.5.0.2.nupkg.sha512",
     "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.2\\microsoft.entityframeworkcore.relational.5.0.2.nupkg.sha512",
+    "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.2\\microsoft.entityframeworkcore.tools.5.0.2.nupkg.sha512",
     "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\muhsi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

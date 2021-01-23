@@ -25,8 +25,7 @@ namespace DataService.Entities
         [Required]
         public int RequiredVolunteers { get; set; }
         [Required]
-        [Column(TypeName = "Date")]
-        public DateTime Date { get; set; }
+        public String Date { get; set; }
 
 
     }
