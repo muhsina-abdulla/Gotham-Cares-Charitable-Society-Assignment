@@ -1,11 +1,11 @@
-﻿using DataService.Entities;
+﻿using BuisnessService.ServiceInterface;
+using DataService.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DataService.Services;
 
 
 
@@ -27,7 +27,7 @@ namespace GothamAPI.Controllers
         public IActionResult GetVolunteers()
         {
 
-            return Ok(Admin.GetVolunteers());
+            return Ok(Volunteer.GetVolunteers());
 
         }
 
