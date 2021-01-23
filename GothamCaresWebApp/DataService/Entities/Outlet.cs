@@ -31,6 +31,6 @@ namespace DataService.Entities
     }
 }
     
-    public enum FoodType {Veg , NonVeg, Both };
+    public enum FoodType {Both , Veg, NonVeg };
 
 
