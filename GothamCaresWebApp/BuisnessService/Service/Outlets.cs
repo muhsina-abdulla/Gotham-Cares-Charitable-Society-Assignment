@@ -19,7 +19,7 @@ namespace BuisnessService.Service
 
         public List<Outlet> GetOutlets()
         {
-            return db.Outlets.OrderBy(x =>x.Date).ThenBy(x=>x.FoodPackets).ThenBy(x=>x.Street).ToList();
+            return db.Outlets.OrderBy(x =>x.FoodType).ThenBy(x=>x.Date).ThenBy(x=>x.Street).ToList();
         }
 
 
