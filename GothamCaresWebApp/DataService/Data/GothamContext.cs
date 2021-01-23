@@ -25,6 +25,7 @@ namespace DataService.Data
             modelBuilder.Entity<Outlet>().HasData(
               new Outlet
               {
+                  OutletId = 1,
                   Name = "Rose",
                   Street = "ABC",
                   Landmark = "ABC Store",
@@ -35,6 +36,7 @@ namespace DataService.Data
               }
               ,new Outlet
               {
+                  OutletId = 2,
                   Name = "Lily",
                   Street = "DEF",
                   Landmark = "DEF Store",
@@ -47,7 +49,7 @@ namespace DataService.Data
 
              , new Outlet
              {
-
+                 OutletId = 3,
                  Name = "Jasmine",
                  Street = "GHI",
                  Landmark = "GHI Store",
@@ -58,7 +60,7 @@ namespace DataService.Data
              }, new Outlet
              {
 
-
+                 OutletId = 4,
                  Name = "Lavender",
                  Street = "JKL",
                  Landmark = "JKL Store",
@@ -70,7 +72,7 @@ namespace DataService.Data
              }, new Outlet
              {
 
-
+                 OutletId = 5,
                  Name = "Orchid",
                  Street = "MNO",
                  Landmark = "MNO Store",
@@ -80,18 +82,18 @@ namespace DataService.Data
                  Date = "25/01/2020"
 
              }
-            ) ; 
+            ) ;
 
 
             modelBuilder.Entity<Volunteers>().HasData(new Volunteers
             {
-               
+                Id = 1,
                 Name = "Muhsina",
                 Phone = 86066244485,
                 email = "muhsinabinthabdulla@gmail.com",
                 OutletId = 1,
-                
-                
+
+
 
             }, new Volunteers
             {
@@ -100,34 +102,34 @@ namespace DataService.Data
                 Phone = 98204928902,
                 email = "Hepzibha@gmail.com",
                 OutletId = 2,
-                
+
 
             }, new Volunteers
             {
-                
+                Id = 3,
                 Name = "Priya",
                 Phone = 5864564025,
                 email = "Prya@gmail.com",
                 OutletId = 3,
-                
+
             }, new Volunteers
             {
-                
+                Id = 4,
                 Name = "Megha",
                 Phone = 89208374890,
                 email = "Megha@gmail.com",
                 OutletId = 4,
-                
+
             }, new Volunteers
             {
-                
+                Id = 5,
                 Name = "Navneeth",
                 Phone = 9820328902,
                 email = "FantomPhreak@gmail.com",
                 OutletId = 5,
-               
+
             }
-            ); ;
+            ); 
 
             modelBuilder.Entity<Admin>().HasData(new Admin
             {
