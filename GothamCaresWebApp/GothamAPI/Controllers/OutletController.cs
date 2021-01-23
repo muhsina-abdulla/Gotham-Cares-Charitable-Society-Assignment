@@ -1,4 +1,5 @@
 ﻿using BuisnessService.ServiceInterface;
+using DataService.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -32,14 +33,14 @@ namespace GothamAPI.Controllers
         public IActionResult AddOutlet(Outlet Outlet)
         {
 
-            return Ok(Admin.AddOutlet(Outlet));
+            return Ok(Outlets.AddOutlet(Outlet));
 
         }
 
         [HttpPut("Edit Outlet/{id}")]
         public IActionResult EditOutlet(Outlet Outlet)
         {
-            String result = Admin.EditOutletDetails(Outlet);
+            String result = Outlets.EditOutletDetails(Outlet);
             if (result.Equals("Outlet Details Edited Successfully"))
             {
                 return Ok(result);
@@ -50,7 +51,7 @@ namespace GothamAPI.Controllers
         [HttpDelete("Delete Outlet/{id}")]
         public IActionResult DeleteOutlet(int id)
         {
-            string result = Admin.DeleteOutlet(id);
+            string result = Outlets.DeleteOutlet(id);
             if (result.Equals("Deletion Successful"))
             {
                 return Ok(result);
