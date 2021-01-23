@@ -1,11 +1,11 @@
-﻿using BuisnessServices.Entities;
+﻿using DataService.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BuisnessServices.Services;
+using DataService.Services;
 
 
 
@@ -22,20 +22,24 @@ namespace GothamAPI.Controllers
             Volunteer = volunteer;
         }
 
+        [HttpGet]
+        [Route("Volunteers List")]
+        public IActionResult GetVolunteers()
+        {
+
+            return Ok(Admin.GetVolunteers());
+
+        }
+
 
         [HttpPost]
-        [Route("Registration")]
+        [Route("Volunteer Registration")]
         public IActionResult Register(Volunteers Vol) 
         {
             return Ok(Volunteer.VolunteerRegister(Vol));
 
         }
 
-        [HttpGet]
-        [Route("Outlets")]
-        public IActionResult GetOutlets()
-        {
-            return Ok(Volunteer.GetOutlets());
-        }
+        
     }
 }

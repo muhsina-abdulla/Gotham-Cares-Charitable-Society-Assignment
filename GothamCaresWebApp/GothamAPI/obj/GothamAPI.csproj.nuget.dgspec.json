@@ -4,14 +4,76 @@
     "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\GothamAPI\\GothamAPI.csproj": {}
   },
   "projects": {
-    "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessServices\\BuisnessServices.csproj": {
+    "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessService\\BuisnessService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessServices\\BuisnessServices.csproj",
-        "projectName": "BuisnessServices",
-        "projectPath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessServices\\BuisnessServices.csproj",
+        "projectUniqueName": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessService\\BuisnessService.csproj",
+        "projectName": "BuisnessService",
+        "projectPath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessService\\BuisnessService.csproj",
         "packagesPath": "C:\\Users\\muhsi\\.nuget\\packages\\",
-        "outputPath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessServices\\obj\\",
+        "outputPath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\muhsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\DataService\\DataService.csproj": {
+                "projectPath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\DataService\\DataService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\DataService\\DataService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\DataService\\DataService.csproj",
+        "projectName": "DataService",
+        "projectPath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\DataService\\DataService.csproj",
+        "packagesPath": "C:\\Users\\muhsi\\.nuget\\packages\\",
+        "outputPath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\DataService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -44,9 +106,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[5.0.1, )"
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -96,8 +162,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessServices\\BuisnessServices.csproj": {
-                "projectPath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessServices\\BuisnessServices.csproj"
+              "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessService\\BuisnessService.csproj": {
+                "projectPath": "E:\\WORK\\Experion\\Assignments\\Gotham Cares Charitable Society\\GothamCaresWebApp\\BuisnessService\\BuisnessService.csproj"
               }
             }
           }
@@ -112,10 +178,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Core": {
-              "target": "Package",
-              "version": "[5.2.7, )"
-            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.1, )",
@@ -130,21 +192,7 @@
                 "NU1605"
               ]
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.2, )"
-            },
             "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            },
-            "Swashbuckle.AspNetCore.SwaggerGen": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            },
-            "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
               "version": "[5.6.3, )"
             }

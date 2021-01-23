@@ -1,4 +1,7 @@
-using BuisnessServices.Data;
+
+using BuisnessService.Service;
+using BuisnessService.ServiceInterface;
+using DataService.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,8 +16,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BuisnessServices.Services;
-
 
 namespace GothamAPI
 {
@@ -43,10 +44,9 @@ namespace GothamAPI
 
             });
 
-            services.AddScoped<IAdmin,AdminRepository>();
-            services.AddScoped<IVolunteer, VolunteerRepository>();
-
-          
+            services.AddScoped<IAdmins,Admins>();
+            services.AddScoped<IVolunteer,Volunteer>();
+            services.AddScoped<IOultlets,Outlets>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
