@@ -17,7 +17,6 @@ namespace BuisnessService.Service
         }
 
         
-
         public List<Volunteers> GetVolunteers()
         {
             return db.Volunteers.ToList();
