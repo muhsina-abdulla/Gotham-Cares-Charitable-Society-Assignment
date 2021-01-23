@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BuisnessService.ServiceInterface
 {
-    interface IOutlets
+    public interface IOutlets
     {
         List<Outlet> GetOutlets();
         String AddOutlet(Outlet Outlet);

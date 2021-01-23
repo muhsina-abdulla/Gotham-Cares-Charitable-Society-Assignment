@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BuisnessService.ServiceInterface;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,12 @@ namespace GothamAPI.Controllers
     [ApiController]
     public class OutletController : ControllerBase
     {
-        // GET: api/<OutletController>
+        private IOutlets Outlets;
+
+        public OutletController(IOutlets outlet)
+        {
+            Outlets = outlet;
+        }
 
         [HttpGet]
         [Route("Outlets")]
