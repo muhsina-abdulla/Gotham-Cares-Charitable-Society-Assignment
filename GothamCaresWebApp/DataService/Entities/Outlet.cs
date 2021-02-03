@@ -19,18 +19,19 @@ namespace DataService.Entities
         [Required]
         public string Landmark { get; set; }
         [Required]
-        public int FoodPackets { get; set; }
+        public int AvailableFoodPackets { get; set; }
         [Required]
-        public FoodType FoodType { get; set; }
+        public string FoodType { get; set; }
         [Required]
         public int RequiredVolunteers { get; set; }
         [Required]
-        public String Date { get; set; }
+        [Column(TypeName = "date")]
+        public DateTime Date { get; set; }
 
 
     }
 }
     
-    public enum FoodType {Both , Veg, NonVeg };
+    
 
 

@@ -19,15 +19,35 @@ namespace BuisnessService.Service
 
         public List<Outlet> GetOutlets()
         {
-            return db.Outlets.OrderBy(x =>x.FoodType).ThenBy(x=>x.Date).ThenBy(x=>x.Street).ToList();
+            DateTime fromdate = DateTime.Today;
+            DateTime todate = DateTime.Today.AddDays(3);
+
+            return (db.Outlets.Where(x => x.Date >= fromdate && x.Date <= todate)).OrderBy(x =>x.Date).ThenBy(x=>x.FoodType).ThenBy(x=>x.Street).ToList();
         }
 
 
         public string AddOutlet(Outlet Outlet)
         {
-            db.Outlets.Add(Outlet);
-            db.SaveChanges();
-            return "Outlet Added Successfully";
+            int count = (db.Outlets.Where(x => x.Date == Outlet.Date)).Count();
+            int bothcount = (db.Outlets.Where(x => x.Date == Outlet.Date && x.FoodType == "Both")).Count();
+
+            if((Outlet.FoodType).Equals("Both"))
+            {
+                if (bothcount >= 3)
+                {
+                    return "There are already 3 Outlets which distribute both Veg and Non Veg";
+                }
+            }
+            if (count < 10)
+            {
+                db.Outlets.Add(Outlet);
+                db.SaveChanges();
+                return "Outlet Added Successfully";
+            }
+            else
+            {
+                return "Outlet Cannot be added.Only ten outlets allowed for a day";
+            }
         }
 
         public String DeleteOutlet(int id)

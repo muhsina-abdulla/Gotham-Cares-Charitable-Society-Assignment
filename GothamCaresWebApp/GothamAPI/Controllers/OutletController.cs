@@ -22,18 +22,26 @@ namespace GothamAPI.Controllers
         }
 
         [HttpGet]
-        [Route("Outlets")]
-        public IActionResult GetOutlets()
+        
+        public IActionResult Get()
         {
+            
             return Ok(Outlets.GetOutlets());
         }
 
 
-        [HttpPost("New Outlet")]
-        public IActionResult AddOutlet(Outlet Outlet)
+        [HttpPost]
+        public IActionResult Post(Outlet Outlet)
         {
-
-            return Ok(Outlets.AddOutlet(Outlet));
+            string str = Outlets.AddOutlet(Outlet);
+            if ((str).Equals("Outlet Added Successfully"))
+            {
+                return Ok(str);
+            }
+            else
+            {
+                return BadRequest(str);
+            }
 
         }
 
