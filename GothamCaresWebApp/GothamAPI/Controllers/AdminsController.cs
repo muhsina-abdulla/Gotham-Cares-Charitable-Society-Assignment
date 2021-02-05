@@ -23,7 +23,7 @@ namespace GothamAPI.Controllers
             Admin = admin;
         }
 
-        [HttpGet("Login/{email}/{password}")]
+        [HttpGet("/{email}/{password}")]
         public IActionResult Login(string email, String password) 
         {
             Admin admin = Admin.login(email, password);

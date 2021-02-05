@@ -22,7 +22,8 @@ namespace BuisnessService.Service
             DateTime fromdate = DateTime.Today;
             DateTime todate = DateTime.Today.AddDays(3);
 
-            return (db.Outlets.Where(x => x.Date >= fromdate && x.Date <= todate)).OrderBy(x =>x.Date).ThenBy(x=>x.FoodType).ThenBy(x=>x.Street).ToList();
+            return (db.Outlets.Where(x => x.Date >= fromdate && x.Date <= todate)).OrderBy(x =>x.Date).ThenBy(x=>x.FoodType)
+                .ThenBy(x=>x.Street).ToList();
         }
 
 

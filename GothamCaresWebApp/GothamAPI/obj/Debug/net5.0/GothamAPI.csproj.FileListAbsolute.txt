@@ -48,3 +48,9 @@ E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\G
 E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\obj\Debug\net5.0\GothamAPI.genruntimeconfig.cache
 E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\Humanizer.dll
 E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\System.Web.Cors.dll
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\System.Web.Http.dll
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\System.Web.Http.Cors.dll
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
+E:\WORK\Experion\Assignments\Gotham Cares Charitable Society\GothamCaresWebApp\GothamAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

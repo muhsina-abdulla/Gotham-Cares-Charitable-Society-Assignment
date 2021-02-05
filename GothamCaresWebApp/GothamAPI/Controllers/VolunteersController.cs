@@ -23,8 +23,7 @@ namespace GothamAPI.Controllers
         }
 
         [HttpGet]
-        [Route("Volunteers List")]
-        public IActionResult GetVolunteers()
+        public IActionResult Get()
         {
 
             return Ok(Volunteer.GetVolunteers());
@@ -33,8 +32,8 @@ namespace GothamAPI.Controllers
 
 
         [HttpPost]
-        [Route("Volunteer Registration")]
-        public IActionResult Register(Volunteers Vol) 
+        
+        public IActionResult Post(Volunteers Vol) 
         {
             return Ok(Volunteer.VolunteerRegister(Vol));
 

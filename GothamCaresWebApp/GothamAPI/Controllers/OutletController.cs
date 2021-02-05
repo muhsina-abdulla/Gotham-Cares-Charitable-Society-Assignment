@@ -45,7 +45,7 @@ namespace GothamAPI.Controllers
 
         }
 
-        [HttpPut("Edit Outlet/{id}")]
+        [HttpPut("/{id}")]
         public IActionResult EditOutlet(Outlet Outlet)
         {
             String result = Outlets.EditOutletDetails(Outlet);
@@ -56,7 +56,7 @@ namespace GothamAPI.Controllers
             return NotFound(result);
         }
 
-        [HttpDelete("Delete Outlet/{id}")]
+        [HttpDelete("/{id}")]
         public IActionResult DeleteOutlet(int id)
         {
             string result = Outlets.DeleteOutlet(id);
